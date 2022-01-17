@@ -1,0 +1,4 @@
+person:
+  - id: 2
+    first_name: "Albert"
+    last_name: "Einstein"

@@ -1,0 +1,10 @@
+person:
+  - id: 1
+    first_name: "Nikola"
+    last_name: "Tesla"
+  - id: 2
+    first_name: "Albert"
+    last_name: "Einstein"
+  - id: 3
+    first_name: "Carl"
+    last_name: "Sagan"

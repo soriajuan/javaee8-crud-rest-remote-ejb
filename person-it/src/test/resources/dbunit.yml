@@ -1,0 +1,9 @@
+alwaysCleanBefore: true
+alwaysCleanAfter: true
+properties:
+  batchedStatements:  true
+connectionConfig: 
+  driver: "org.h2.Driver"
+  url: "jdbc:h2:tcp://localhost:9092/mem:test"
+  user: "sa"
+  password: ""

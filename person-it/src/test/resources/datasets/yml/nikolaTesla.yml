@@ -1,0 +1,4 @@
+person:
+  - id: 1
+    first_name: "Nikola"
+    last_name: "Tesla"
