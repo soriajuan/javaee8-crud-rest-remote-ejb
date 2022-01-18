@@ -1,0 +1,32 @@
+configuration:
+  name: PersonItYamlLogConfiguration
+  status: info
+
+  properties:
+    property:
+    - name: log-path
+      value: ~
+    - name: logPatternFormat
+      value: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%logger{1}] - %msg%n"
+
+  appenders:
+    Console:
+      name: stdout
+      PatternLayout:
+        pattern: ${logPatternFormat}
+    RollingFile:
+      name: rollingfile
+      fileName: ${log-path}/person-it.log
+      filePattern: "${log-path}/person-it.log-%d{yyyy-MM-dd}.gz"
+      patternLayout:
+        pattern: ${logPatternFormat}
+      policies:
+        - timeBasedTriggeringPolicy:
+            modulate: true
+ 
+  loggers:
+    root:
+      level: info
+      appenderRef:
+        - ref: stdout
+        - ref: rollingfile
