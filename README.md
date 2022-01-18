@@ -27,7 +27,7 @@ Integration tests with cargo plugin and wildfly 26
 mvn clean test
 
 ### Integration Testing
-mvn clean verify -P wildfly26-e2e-testing
+mvn clean verify -P wildfly26-integration-testing
 
 ### Build
 mvn clean package
